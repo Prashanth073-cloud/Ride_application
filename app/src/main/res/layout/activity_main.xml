@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <EditText
+     android:id="@+id/phoneNumberTV"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Please enter phone number"
+     />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumberTV"
+        android:text="SIGN IN"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/verifyNumberET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter code"
+        android:layout_below="@+id/signInBtn"
+        />
+
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifyNumberET"
+        android:text="VERIFY"
+        android:layout_marginTop="100dp"
+        />
+
+
+</RelativeLayout>
